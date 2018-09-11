@@ -149,7 +149,7 @@ public class Util {
 
 	//2、元素断言失败时截图
 	public static void takeScreenshot(String sTestCaseName) {
-		DateFormat dateformat = new SimpleDateFormat("yyyy-MM-ddhh_mm_ss");
+		DateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd-hh_mm_ss");
 		Date date = new Date();
 		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
