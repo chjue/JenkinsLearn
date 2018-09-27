@@ -1,17 +1,15 @@
 package com.maven.learning.JenkinsLearn.test;
 
-import static org.junit.Assert.*;
 
 import java.io.IOException;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import com.maven.learning.JenkinsLearn.utils.Constants;
 import com.maven.learning.JenkinsLearn.utils.Log;
