@@ -24,13 +24,13 @@ public class TestUpload extends ChromeCase{
 		Thread.sleep(2000);
 
 	  	  //1.点击“浏览”按钮---使用JS点击，可保证点击后鼠标的焦点在弹框中
-	  	  WebElement element=driver.findElement(By.xpath("/html/body/form/input[1]"));
+	  	  WebElement element=driver.findElement(By.xpath("//input[@type='file']"));
 	  	  element.click();
 	  //	  ((JavascriptExecutor)driver).executeScript("arguments[0].click();",element);
 	  	  Thread.sleep(2000);
 	  	  //2.运行tedu.exe---方式三：AutoIt生成的exe
 	  	  try{
-	  		  Runtime.getRuntime().exec("C:\\selenium\\autoitUploadfile.exe");
+	  		  Runtime.getRuntime().exec("C:\\selenium\\tedu222.exe");
 	  		}catch(IOException e){
 	  		  e.printStackTrace();
 	  		}
